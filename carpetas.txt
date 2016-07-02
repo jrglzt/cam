@@ -1,0 +1,65 @@
+api => config   [ This directory will serve as our restful data provider ]
+
+–   config.php [ Database configuration information ]  => database.php
+
+–   libs [ The PHPSlim library files ]
+
+–   v1 [ This folder controls our API version ]
+
+—   .htaccess [ used to convert urls to user friendly url]
+
+—   passwordHash.php [ Generate password hash ]
+
+—   dbConnect.php [ The function to connect to MySQL Database ]
+
+—   dbHandler.php [ This file contains some database helper functions ]
+
+—   index.php [ The starting point of the API ]
+
+—  authentication.php [ Contains functions for user authentication, login, signup, session ]
+
+------------------------------------------------------------
+
+
+app => app  
+
+–          app.js [ The main angularJS file that controls routing and authentication ]
+
+–          authCtrl.js
+
+–          data.js
+
+–          directives.js
+------------------------------------------------------------
+
+css => libs/css
+
+–          bootstrap.min.css
+
+–          custom.css
+
+–          toaster.css
+
+----------------------------------------------------------------
+
+js => libs/js 	 [ This directory contains required javascript libraries ]
+
+–          angular.min.js
+
+–          angular-route.min.js
+
+–          angular-animate.min.js
+
+–          toaster.js
+
+---------------------------------------------------------------------
+
+partials => partials	 [ Contains our partial pages that will be served based on user request ]
+
+–          login.html
+
+–          signup.html
+
+–          dashboard.html
+
+-	index.php [ Starting point of our application contains css files, javascript files and ng-view placeholder to serve all requested partial pages ]
